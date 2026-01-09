@@ -121,12 +121,12 @@ Party strength is assessed via `get_top_parties()` and party-specific filters. A
 ### 6.1 Project Workflow Diagram
 ```mermaid
 flowchart LR
-    A[Raw ECI CSVs] --> B[load_data()]
-    B --> C[Derived metrics & caching]
-    C --> D[EDA modules (Executive, Swing, Geo, Strongholds)]
-    D --> E[Model prep - prepare_prediction_data]
-    E --> F[Weighted Linear Regression]
-    F --> G[Predictive Engine visualizations]
+    A["Raw ECI CSVs"] --> B["load_data"]
+    B --> C["Derived metrics and caching"]
+    C --> D["EDA modules: Executive, Swing, Geo, Strongholds"]
+    D --> E["Model prep: prepare_prediction_data"]
+    E --> F["Weighted Linear Regression"]
+    F --> G["Predictive Engine visualizations"]
 ```
 
 ### 6.2 Steps Involved in Model Building
@@ -143,13 +143,13 @@ Temporal data demands chronological validation. EINAD trains on all observations
 ### 6.4 Flowchart
 ```mermaid
 flowchart TD
-    start[User launches dashboard] --> cache[Cache warm-up & data load]
+    start["User launches dashboard"] --> cache["Cache warm-up and data load"]
     cache --> nav[User selects insight stream]
-    nav --> eda[EDA view renders Plotly charts]
-    nav --> predict[Predictive Engine invoked]
-    predict --> status[Streaming status messages]
-    status --> results[Vote-share projections & confidence cues]
-    results --> export[Insights consumed or exported]
+    nav --> eda["EDA view renders Plotly charts"]
+    nav --> predict["Predictive Engine invoked"]
+    predict --> status["Streaming status messages"]
+    status --> results["Vote-share projections and confidence cues"]
+    results --> export["Insights consumed or exported"]
 ```
 
 ## 7. Model Building / Implementation
