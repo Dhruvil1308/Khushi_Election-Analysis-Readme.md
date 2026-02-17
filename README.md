@@ -137,8 +137,8 @@ graph TD
     C -->|Swing Analysis| E[Momentum & Wave Detection]
     C -->|Geo-Spatial Intel| F[Constituency Deep-Dives]
     C -->|Predictive Engine| G[ML Pipelines]
-    G --> H[Vote Share Projection (Regression)]
-    G --> I[Win/Loss Classification (Random Forest)]
+    G --> H["Vote Share Projection (Regression)"]
+    G --> I["Win/Loss Classification (Random Forest)"]
 ```
 
 ### 6.2 Steps Involved in Model Building
